@@ -4,6 +4,5 @@
 - JUnit 5
 - Spring Boot
 - Spring Data JPA
-- H2 Database
 - Swagger
 - Exception Handler
