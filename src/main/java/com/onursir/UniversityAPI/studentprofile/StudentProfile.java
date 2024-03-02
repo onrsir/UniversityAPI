@@ -1,6 +1,6 @@
-package com.onursir.UniversityAPI;
+package com.onursir.UniversityAPI.studentprofile;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.onursir.UniversityAPI.student.Student;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,10 +17,9 @@ public class StudentProfile {
 
     private String bio;
 
- /*   @OneToOne
+    @OneToOne
     @JoinColumn(name = "student_id")
     private Student student;
-*/
 
 
 }

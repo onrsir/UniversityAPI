@@ -1,4 +1,4 @@
-package com.onursir.UniversityAPI;
+package com.onursir.UniversityAPI.school;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

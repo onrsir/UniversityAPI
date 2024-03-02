@@ -1,8 +1,7 @@
-package com.onursir.UniversityAPI;
+package com.onursir.UniversityAPI.school;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.onursir.UniversityAPI.student.Student;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

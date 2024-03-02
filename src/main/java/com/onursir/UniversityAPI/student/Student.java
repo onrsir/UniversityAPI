@@ -1,8 +1,8 @@
-package com.onursir.UniversityAPI;
+package com.onursir.UniversityAPI.student;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.onursir.UniversityAPI.studentprofile.StudentProfile;
+import com.onursir.UniversityAPI.school.School;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,8 +24,8 @@ public class Student {
     private String email;
     private int age;
 
-    /*@OneToOne(mappedBy = "student",cascade = CascadeType.ALL)
-    private StudentProfile studentProfile;*/
+    @OneToOne(mappedBy = "student",cascade = CascadeType.ALL)
+    private StudentProfile studentProfile;
 
     @ManyToOne
     @JoinColumn(name = "school_id",referencedColumnName = "id")

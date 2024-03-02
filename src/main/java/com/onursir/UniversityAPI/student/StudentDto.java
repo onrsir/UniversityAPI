@@ -1,4 +1,4 @@
-package com.onursir.UniversityAPI;
+package com.onursir.UniversityAPI.student;
 
 public record StudentDto (
         String firstname,
