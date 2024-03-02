@@ -18,12 +18,13 @@ public class School {
     @GeneratedValue
     private int id;
 
-    public School(String name) {
-        this.name = name;
-    }
 
     private String name;
 
+    public School(String name, int id) {
+        this.name = name;
+        this.id = id;
+    }
     @OneToMany(mappedBy = "school")
     @JsonManagedReference
     private List<Student> students;

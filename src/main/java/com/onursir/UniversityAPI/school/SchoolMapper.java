@@ -7,11 +7,13 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class SchoolMapper {
     public School toSchool(SchoolDto dto) {
-        return new School(dto.name());
+        return new School(dto.name(),
+                dto.id() );
     }
 
     public SchoolDto toSchoolDto(School school){
-        return new SchoolDto((school.getName()));
+        return new SchoolDto(school.getName(),
+        school.getId() );
     }
 
 

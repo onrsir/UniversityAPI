@@ -1,10 +1,16 @@
 package com.onursir.UniversityAPI.student;
 
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
+import java.util.HashMap;
 
+import java.lang.reflect.Method;
 import java.util.List;
 
 @RestController
@@ -16,7 +22,7 @@ public class StudentController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.CREATED)
-    public StudentResponseDto save(@RequestBody StudentDto dto){
+    public StudentResponseDto save(@Valid @RequestBody StudentDto dto){
         return this.studentService.saveStudent(dto);
     }
 
@@ -41,4 +47,15 @@ public class StudentController {
         studentService.deleteById(id);
     }
 
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<?> handleNotValidException(MethodArgumentNotValidException ex){
+        var errors = new HashMap<String, String>();
+        ex.getBindingResult().getAllErrors()
+                .forEach(error -> {
+                    var fieldName = ((FieldError) error) .getField();
+                    var errorMessage = error.getDefaultMessage();
+                    errors.put(fieldName,errorMessage);
+                });
+        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
+    }
 }
