@@ -1,7 +1,7 @@
-package com.onursir.UniversityAPI.school;
+package com.onursir.UniversityAPI.school.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.onursir.UniversityAPI.student.Student;
+import com.onursir.UniversityAPI.student.entity.Student;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

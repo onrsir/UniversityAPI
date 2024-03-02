@@ -1,9 +1,11 @@
 package com.onursir.UniversityAPI.student;
 
-import com.onursir.UniversityAPI.school.School;
+import com.onursir.UniversityAPI.school.entity.School;
+import com.onursir.UniversityAPI.student.dto.StudentDto;
+import com.onursir.UniversityAPI.student.dto.StudentResponseDto;
+import com.onursir.UniversityAPI.student.entity.Student;
+import com.onursir.UniversityAPI.student.mapper.StudentMapper;
 import com.onursir.UniversityAPI.studentprofile.StudentProfile;
-import lombok.AllArgsConstructor;
-import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

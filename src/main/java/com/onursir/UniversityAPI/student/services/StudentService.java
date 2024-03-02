@@ -1,5 +1,9 @@
-package com.onursir.UniversityAPI.student;
+package com.onursir.UniversityAPI.student.services;
 
+import com.onursir.UniversityAPI.student.dao.StudentRepository;
+import com.onursir.UniversityAPI.student.dto.StudentDto;
+import com.onursir.UniversityAPI.student.dto.StudentResponseDto;
+import com.onursir.UniversityAPI.student.mapper.StudentMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,6 +1,9 @@
-package com.onursir.UniversityAPI.student;
+package com.onursir.UniversityAPI.student.mapper;
 
-import com.onursir.UniversityAPI.school.School;
+import com.onursir.UniversityAPI.school.entity.School;
+import com.onursir.UniversityAPI.student.dto.StudentResponseDto;
+import com.onursir.UniversityAPI.student.dto.StudentDto;
+import com.onursir.UniversityAPI.student.entity.Student;
 import org.springframework.stereotype.Service;
 
 @Service

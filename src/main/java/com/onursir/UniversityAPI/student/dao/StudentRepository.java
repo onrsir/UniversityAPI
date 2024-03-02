@@ -1,5 +1,6 @@
-package com.onursir.UniversityAPI.student;
+package com.onursir.UniversityAPI.student.dao;
 
+import com.onursir.UniversityAPI.student.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

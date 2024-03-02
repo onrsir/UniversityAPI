@@ -1,6 +1,6 @@
 package com.onursir.UniversityAPI.studentprofile;
 
-import com.onursir.UniversityAPI.student.Student;
+import com.onursir.UniversityAPI.student.entity.Student;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

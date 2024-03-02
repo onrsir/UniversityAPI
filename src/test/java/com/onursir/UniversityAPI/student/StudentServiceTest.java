@@ -1,6 +1,12 @@
 package com.onursir.UniversityAPI.student;
 
-import com.onursir.UniversityAPI.school.School;
+import com.onursir.UniversityAPI.school.entity.School;
+import com.onursir.UniversityAPI.student.dao.StudentRepository;
+import com.onursir.UniversityAPI.student.dto.StudentDto;
+import com.onursir.UniversityAPI.student.dto.StudentResponseDto;
+import com.onursir.UniversityAPI.student.entity.Student;
+import com.onursir.UniversityAPI.student.mapper.StudentMapper;
+import com.onursir.UniversityAPI.student.services.StudentService;
 import com.onursir.UniversityAPI.studentprofile.StudentProfile;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,7 +16,6 @@ import org.mockito.MockitoAnnotations;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;

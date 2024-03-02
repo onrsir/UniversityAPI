@@ -1,4 +1,4 @@
-package com.onursir.UniversityAPI.student;
+package com.onursir.UniversityAPI.student.dto;
 
 import jakarta.validation.constraints.NotEmpty;
 

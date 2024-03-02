@@ -1,6 +1,8 @@
-package com.onursir.UniversityAPI.school;
+package com.onursir.UniversityAPI.school.controller;
 
 
+import com.onursir.UniversityAPI.school.dto.SchoolDto;
+import com.onursir.UniversityAPI.school.services.SchoolService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

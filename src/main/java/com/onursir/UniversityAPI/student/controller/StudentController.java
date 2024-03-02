@@ -1,5 +1,8 @@
-package com.onursir.UniversityAPI.student;
+package com.onursir.UniversityAPI.student.controller;
 
+import com.onursir.UniversityAPI.student.dto.StudentDto;
+import com.onursir.UniversityAPI.student.dto.StudentResponseDto;
+import com.onursir.UniversityAPI.student.services.StudentService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

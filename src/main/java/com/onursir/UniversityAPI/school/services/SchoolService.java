@@ -1,5 +1,8 @@
-package com.onursir.UniversityAPI.school;
+package com.onursir.UniversityAPI.school.services;
 
+import com.onursir.UniversityAPI.school.dao.SchoolRepository;
+import com.onursir.UniversityAPI.school.dto.SchoolDto;
+import com.onursir.UniversityAPI.school.mapper.SchoolMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;

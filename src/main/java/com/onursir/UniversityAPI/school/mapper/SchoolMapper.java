@@ -1,5 +1,7 @@
-package com.onursir.UniversityAPI.school;
+package com.onursir.UniversityAPI.school.mapper;
 
+import com.onursir.UniversityAPI.school.dto.SchoolDto;
+import com.onursir.UniversityAPI.school.entity.School;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
