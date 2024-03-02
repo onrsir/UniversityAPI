@@ -11,7 +11,6 @@ import java.util.List;
 @AllArgsConstructor
 @RequestMapping("/schools")
 public class SchoolController {
-    private final SchoolRepository schoolRepository;
     private final SchoolService schoolService;
 
     @PostMapping
